@@ -24,7 +24,7 @@ function scanfiles($dir)
 
         $tmp = scandir($dir);
 
-        foreach ($tmp as $f) {
+        foreach ($tmp as $f) {// 这里可以使用array_walk?优化
             if($f == '.' || $f == '..') {
                 continue;
             }
